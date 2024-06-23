@@ -191,6 +191,14 @@ class MyFirstGUI:
         self.citra_test.configure(image='')
         self.citra_glcm.configure(image='')
         self.hsBPNN.configure(text="")
+        self.lbhKontras.configure(text="")
+        self.lbhHomog.configure(text="")
+        self.lbhEnergy.configure(text="")
+        self.lbhCor.configure(text="")
+        self.lbhEnt.configure(text="")
+        # Clear the Treeview
+        for row in self.table_sudut.get_children():
+            self.table_sudut.delete(row)
 
     # def fungsi_open(self):
     #     global file_citra
