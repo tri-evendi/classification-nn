@@ -293,9 +293,8 @@ class MyFirstGUI:
         self.hsBPNN.configure(text=self.hasil)
 
         # Populate the table_sudut data into the Treeview
-        angles = [0, 45, 90, 135]
-        for i, row in enumerate(self.table_sudut_data):
-            self.table_sudut.insert("", "end", values=(angles[i], *row))
+        for row in self.table_sudut_data:
+            self.table_sudut.insert("", "end", values=row)
 
 
 root = tk.Tk()
